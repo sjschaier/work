@@ -1,0 +1,22 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center mt-5">
+    <!-- Centered header -->
+    <h1>Welkom bij de Riool App</h1>
+    <!-- Centered smaller header -->
+    <h3 class="mt-3">Maak hieronder een keuze</h3>
+
+    <!-- Buttons section -->
+    <div class="mt-5">
+        <!-- Button to create a new sewer model -->
+        <a href="{% url 'nieuw_model' %}" class="btn btn-outline-secondary btn-lg me-3" style="background-color: #f8f9fa;">
+            Maak een nieuw riool model
+        </a>
+        <!-- Button to load an existing model via GWSW -->
+        <a href="" class="btn btn-outline-secondary btn-lg" style="background-color: #f8f9fa;">
+            Laad een bestaand model in via GWSW
+        </a>
+    </div>
+</div>
+{% endblock %}
